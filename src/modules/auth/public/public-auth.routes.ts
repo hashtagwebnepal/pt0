@@ -1,11 +1,12 @@
 import Elysia from "elysia";
-import { signupRoute } from "./routes/signup";
-import { loginRoute } from "./routes/login";
-import { meRoute } from "./routes/me";
+import { signup } from "./routes/signup";
+import { login } from "./routes/login";
+import { me } from "./routes/me";
 
 export const publicAuthRoutes = new Elysia({
+	tags: ["Public Auth"],
 	prefix: "/auth",
 })
-	.use(signupRoute)
-	.use(loginRoute)
-	.use(meRoute);
+	.use(signup)
+	.use(login)
+	.use(me);

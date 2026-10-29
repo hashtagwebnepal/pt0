@@ -38,7 +38,7 @@ export const authGuard = new Elysia({ name: "authGuard" })
 
 			if (!user) return { user: undefined as unknown as AuthUser };
 
-			return { user };
+			return { user: user };
 		},
 	)
 	.onBeforeHandle({ as: "scoped" }, ({ user, status }) => {

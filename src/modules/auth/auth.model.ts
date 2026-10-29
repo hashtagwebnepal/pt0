@@ -24,3 +24,12 @@ export const loginResponse = z.object({
 });
 
 export type LoginBody = z.infer<typeof loginBody>;
+
+export const meResponse = z.object({
+	id: z.string(),
+	name: z.string(),
+	email: z.string(),
+	status: z.string(),
+});
+
+export type MeResponse = z.infer<typeof meResponse>;

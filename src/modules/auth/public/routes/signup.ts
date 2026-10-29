@@ -1,14 +1,14 @@
 import Elysia from "elysia";
 import { signupBody, signupResponse } from "@modules/auth/auth.model";
-import { signup } from "@modules/auth/auth.service";
+import { signup as signupService } from "@modules/auth/auth.service";
 import { AppError, errorResponses } from "@/shared/errors/app-error";
 import { logger } from "@/infrastructure/observability/logger";
 
-export const signupRoute = new Elysia().post(
+export const signup = new Elysia().post(
 	"/signup",
 	async ({ body, status }) => {
 		try {
-			const result = await signup(body);
+			const result = await signupService(body);
 			return result;
 		} catch (err) {
 			if (err instanceof AppError) {

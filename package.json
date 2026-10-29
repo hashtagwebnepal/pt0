@@ -1,5 +1,5 @@
 {
-  "name": "period-tracking-be",
+  "name": "Period-Tracking-BE",
   "version": "1.0.0",
   "scripts": {
     "dev": "bun run --watch src/index.ts",
@@ -12,6 +12,7 @@
     "@elysia/bearer": "^1.4.4",
     "@elysia/cors": "^1.4.2",
     "@elysia/jwt": "^1.4.2",
+    "@elysia/openapi": "^1.4.16",
     "@tqman/nice-logger": "^1.1.1",
     "drizzle-orm": "^0.45.2",
     "elysia": "^1.4.28",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.2",
+    "@scalar/types": "^0.25.2",
     "bun-types": "latest",
     "drizzle-kit": "^0.31.10"
   },
