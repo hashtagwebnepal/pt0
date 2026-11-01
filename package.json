@@ -1,6 +1,6 @@
 {
-  "name": "Period-Tracking-BE",
-  "version": "1.0.0",
+  "name": "pt0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "bun run --watch src/index.ts",
     "db:generate": "drizzle-kit generate",
